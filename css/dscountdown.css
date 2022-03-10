@@ -1,0 +1,92 @@
+.dsCountDown:after {
+    content: '';
+    clear: both;
+}
+
+.dsCountDown {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+
+/* ------------------------- White Theme ------------------------- */
+
+.dsCountDown.ds-white {
+    color: #000;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif, serif;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.ds-white .ds-element {
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    border-right: 1px solid #dedede5c;
+    padding: 0 40px;
+}
+
+.ds-white .ds-element:nth-child(1) {
+    padding-left: 0;
+}
+
+.dsCountDown.ds-white>.ds-element.ds-element-seconds {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.ds-white .ds-element-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #7b7a7a;
+    font-weight: 700;
+}
+
+.ds-white .ds-element-title:nth-child(1) {
+    text-align: left;
+}
+
+.ds-white .ds-element-value {
+    font-size: 2.5em;
+    color: #222;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 700;
+}
+
+
+/* Media */
+
+@media(max-width:1024px) {
+    .ds-white .ds-element {
+        padding: 0 26px;
+    }
+}
+
+@media(max-width:991px) {
+    .ds-white .ds-element {
+        padding: 0 11px;
+    }
+    .ds-white .ds-element-value {
+        font-size: 1.7em;
+    }
+}
+
+@media(max-width:355px) {
+    .ds-white .ds-element {
+        padding: 0 4px;
+    }
+}
+
+@media (max-width:280px) {
+    .dsCountDown.ds-white {
+        padding: 0px;
+    }
+    .ds-white .ds-element {
+        padding: 0px;
+    }
+}
